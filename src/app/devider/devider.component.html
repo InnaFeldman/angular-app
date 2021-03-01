@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>{{title}}</h1>
+  <div class="wrapper">
+      <div>
+          <input type="text" class="inputNum" #inputNum (keyup)="inputHandl($event)">
+          <p class="error"></p>
+      </div>
+          <button class="addClick" (click)="countDeviders()">AddClick</button>
+  </div>
+
+  <div class="wrapper-2">
+      <div class="result">делители числа: <span class="number"></span> </div>
+      <div class="list"></div>
+      <p class="sum"> The sum is <span class="sumSpan"></span></p>
+      <p> The quanity is <span class="quanity"></span></p>
+  </div>
+</div>
