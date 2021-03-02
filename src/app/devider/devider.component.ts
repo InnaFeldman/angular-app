@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./devider.component.scss']
 })
 export class DeviderComponent implements OnInit {
-  title:string = "Number devider";
-  inputNum:any;
+  title:string = "Number divider";
+  inputNum:any = "";
   constructor() { }
 
   ngOnInit(): void {}
@@ -15,6 +15,7 @@ export class DeviderComponent implements OnInit {
   inputHandl(event:any){
     const value = event.target.value;
     this.inputNum = value;
+    return this.inputNum;
   }
 
   countDeviders(){
