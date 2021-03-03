@@ -7,18 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeviderComponent implements OnInit {
   title:string = "Number divider";
-  inputNum:any = "";
+  inputNumber:string = "";
   constructor() { }
 
   ngOnInit(): void {}
 
-  inputHandl(event:any){
-    const value = event.target.value;
-    this.inputNum = value;
-    return this.inputNum;
+  inputHandl(value:string){
+    this.inputNumber = value;
+    return this.inputNumber;
   }
 
   countDeviders(){
-    this.title = 'Title is changed';
+    console.log(this.inputNumber);
   }
 }

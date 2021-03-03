@@ -2,14 +2,14 @@
   <h1>{{title}}</h1>
   <div class="wrapper">
       <div>
-          <input type="text" class="inputNum" #inputNum (keyup)="inputHandl($event)">
+          <input type="text" class="inputNum" #inputNum (keyup)="inputHandl(inputNum.value)">
           <p class="error"></p>
       </div>
           <button class="addClick" (click)="countDeviders()">AddClick</button>
   </div>
 
   <div class="wrapper-2">
-      <div class="result">Number divider: <span class="number">{{inputNum.value}}</span> </div>
+      <div class="result">Number divider: <span class="number">{{inputNumber}}</span> </div>
       <div class="list"></div>
       <p class="sum"> The sum is <span class="sumSpan"></span></p>
       <p> The quanity is <span class="quanity"></span></p>
