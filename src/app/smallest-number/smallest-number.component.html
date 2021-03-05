@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Task 1</h1>
+  <div class="wrapper">
+      <div>
+          <input type="text" [(ngModel)]="inputValue" class="inputNum">
+          <p class="error">{{error_msg}}</p>
+      </div>
+          <button class="addClick" (click)="addInputValue()">Add</button>
+  </div>
+  <!-- <p class="para">Put a "0" for finish</p> -->
+
+  <div class="wrapper-2">
+      <div class="numres" *ngFor="let item of newArray;">{{item}}</div>
+      <div class="result">The smallest number is : <span class="numbers">{{minNumber}}</span> </div>
+      <button class="get" (click)="getResult()">Get result</button>
+  </div>
+</div>

@@ -10,6 +10,7 @@ import { FormComponent } from './form/form.component';
 import { DividerComponent } from './divider/divider.component';
 import { SingleListComponent } from './single-list/single-list.component';
 import { BinaryTreeComponent } from './binary-tree/binary-tree.component';
+import { SmallestNumberComponent } from './smallest-number/smallest-number.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BinaryTreeComponent } from './binary-tree/binary-tree.component';
     FormComponent,
     DividerComponent,
     SingleListComponent,
-    BinaryTreeComponent
+    BinaryTreeComponent,
+    SmallestNumberComponent
   ],
   imports: [
     BrowserModule,
