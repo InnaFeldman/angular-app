@@ -2,7 +2,7 @@
   <h1>{{title}}</h1>
   <div class="wrapper">
       <div>
-          <input type="text" class="inputNum" #inputNum (keyup)="inputHandl(inputNum.value)">
+         <input type="text" [(ngModel)]="inputNumber" class="inputNum">
           <p class="error">{{error_msg}}</p>
       </div>
           <button class="addClick" (click)="countDeviders()">AddClick</button>
@@ -11,9 +11,9 @@
   <div class="wrapper-2">
       <div class="result">Number divider: <span class="number">{{inputNumber}}</span> </div>
       <ul class="list">
-        <!-- <li *ngFor='let i of counter(5);' >{{i}}</li> -->
+        <li *ngFor='let el of dividers;'>{{el}}</li>
       </ul>
-      <p class="sum"> The sum is <span class="sumSpan"></span></p>
-      <p> The quanity is <span class="quanity"></span></p>
+      <p class="sum"> The sum is <span class="sumSpan">{{devidersSum}}</span></p>
+      <p> The quanity is <span class="quanity">{{counter}}</span></p>
   </div>
 </div>
