@@ -7,14 +7,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {CardComonent} from './card/card.component';
 import { FormComponent } from './form/form.component';
-import { DeviderComponent } from './devider/devider.component';
+import { DividerComponent } from './divider/divider.component';
+import { SingleListComponent } from './single-list/single-list.component';
+import { BinaryTreeComponent } from './binary-tree/binary-tree.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComonent,
     FormComponent,
-    DeviderComponent
+    DividerComponent,
+    SingleListComponent,
+    BinaryTreeComponent
   ],
   imports: [
     BrowserModule,

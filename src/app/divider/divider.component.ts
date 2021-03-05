@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-devider',
-  templateUrl: './devider.component.html',
-  styleUrls: ['./devider.component.scss']
+  selector: 'app-divider',
+  templateUrl: './divider.component.html',
+  styleUrls: ['./divider.component.scss']
 })
-export class DeviderComponent implements OnInit {
+export class DividerComponent implements OnInit {
   title:string = "Number divider";
   error_msg:string = "";
   inputNumber: number = 0;
   dividers: number[] = [];
-  devidersSum:number = 0;
+  dividersSum:number = 0;
   counter:number = 0;
   constructor() { }
 
@@ -22,7 +22,7 @@ export class DeviderComponent implements OnInit {
       for(let i = 1; i <= this.inputNumber; i++) {
         if(this.inputNumber % i == 0) {
           this.dividers.push(i);
-          this.devidersSum+=i;
+          this.dividersSum+=i;
           this.counter++;
         }
       }
