@@ -1,0 +1,12 @@
+<div class="container">
+  <ul>
+    <li [id]="item.id">{{item.todoTitle}}
+      <button (click)="removeItem()" class="btn" [ngStyle]="{
+        backgroundColor: 'red',
+        padding:'0.5rem 1rem',
+        marginLeft: '1rem',
+        color: '#fff'
+      }">Remove</button>
+    </li>
+  </ul>
+</div>

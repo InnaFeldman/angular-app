@@ -9,7 +9,7 @@ export class SmallestNumberComponent implements OnInit {
   inputValue: number = 0;
   newArray:number[] = [];
   error_msg:string = "";
-  minNumber:number = 0;
+  minNumber:number = 0 ;
 
   constructor() { }
 
@@ -28,7 +28,6 @@ export class SmallestNumberComponent implements OnInit {
 
   getResult(){
     this.minNumber = this.newArray[0];
-
     for(let i = 0; i < this.newArray.length; i++){
       if(this.newArray[i] < this.minNumber){
         this.minNumber = this.newArray[i];

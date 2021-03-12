@@ -5,6 +5,11 @@ export interface Card{
   text:string
 }
 
+export interface Item {
+  todoTitle:string,
+  id?:number
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,7 +25,22 @@ export class AppComponent {
     {title: 'Last Card 3', text:'This is card number 3'}
   ]
 
+  items:Item [] = [
+    {todoTitle: 'My first assignment', id:1},
+    {todoTitle: 'My fsecond assignment', id:2}
+  ]
+
   toggleCards(){
     this.toggle = !this.toggle;
+  }
+
+  addNewItem(item:Item){
+    this.items.unshift(item);
+    //console.log(item);
+  }
+
+  removeItem(id:number){
+    console.log("Itrm id", id);
+    this.items = this.items.filter(i => i.id !== id);
   }
 }
